@@ -5,13 +5,15 @@ require "net/smtp/headers/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "net-smtp-headers"
-  spec.version       = Net::Smtp::Headers::VERSION
+  spec.version       = Net::SMTP::Headers::VERSION
   spec.authors       = ["yalab"]
   spec.email         = ["rudeboyjet@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{This gem provides smtp header logging for debug.}
+  spec.description   = <<EOS
+
+EOS
+  spec.homepage      = "https://github.com/yalab/net-smtp-headers"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
