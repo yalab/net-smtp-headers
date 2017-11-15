@@ -1,5 +1,5 @@
 module Net
-  module Smtp
+  class SMTP
     module Headers
       VERSION = "0.1.0"
     end
