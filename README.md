@@ -1,8 +1,6 @@
 # Net::Smtp::Headers
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/net/smtp/headers`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem provides smtp header logging for debug.
 
 ## Installation
 
@@ -22,7 +20,25 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+
+```ruby
+io = IOString.new
+Net::SMTP.set_debug_output = io
+```
+
+You should get `io.read` like this header
+
+```
+250-STARTTLS
+250-AUTH PLAIN LOGIN
+250 AUTH=PLAIN LOGIN
+235 Authentication successful
+250 Sender address accepted
+250 Recipient address accepted
+354 Continue
+250 Ok: queued as vRdSVXJ0T9eShk_SB9lZbw
+221 See you later
+```
 
 ## Development
 
